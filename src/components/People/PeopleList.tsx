@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { IPeopleListProps } from './types';
+import { IPerson } from '../../api/reducers/types';
 
 class PeopleList extends Component<IPeopleListProps> {
   componentDidMount() {
@@ -12,8 +13,19 @@ class PeopleList extends Component<IPeopleListProps> {
     if (people && people.length > 0)
       return (
         <div>
-          {JSON.stringify(people)}
-          <button onClick={onDelete}>delete</button>
+          <table>
+            <tr>
+              <th>Name</th>
+            </tr>
+            {people.map(({ name, id }: IPerson) => (
+              <tr>
+                <td>{name}</td>
+                <td>
+                  <button onClick={() => onDelete(id)}>delete</button>
+                </td>
+              </tr>
+            ))}
+          </table>
         </div>
       );
     return <div>no people found</div>;

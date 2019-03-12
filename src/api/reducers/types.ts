@@ -1,5 +1,6 @@
 export interface IPerson {
   name: string;
+  id: number;
 }
 
 export interface IState {
