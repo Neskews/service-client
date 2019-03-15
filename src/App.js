@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
-import { Box, Grommet, Button } from 'grommet';
-import PeopleList from './components/People';
+import { Grommet } from 'grommet';
+import {
+  AbstractBox,
+  Flex,
+  Item,
+  PersonAdder,
+  OfferAdder,
+  Headline
+} from './components';
 
 const theme = {
   global: {
@@ -8,24 +15,8 @@ const theme = {
       family: 'Roboto',
       size: '14px',
       height: '20px'
-    },
-    button: {
-      color: 'green'
     }
   }
-};
-
-const AbstractBox = props => {
-  return (
-    <Box
-      animation={'fadeIn'}
-      align={'start'}
-      elevation={'medium'}
-      pad={'10px'}
-      margin={'5px'}
-      {...props}
-    />
-  );
 };
 
 class App extends Component {
@@ -33,13 +24,28 @@ class App extends Component {
     return (
       <div>
         <Grommet theme={theme}>
-          <AbstractBox background={'light-4'}>
-            <Button label={'Person hinzufügen'} />
-            <Button label={'Auftrag hinzufügen'} />
+          <AbstractBox>
+            <Headline label="Problemlos Service online buchen" />
           </AbstractBox>
-          <AbstractBox background={'light-1'}>
-            <PeopleList />
-          </AbstractBox>
+          <Flex>
+            <AbstractBox
+              background={'light-4'}
+              style={{ width: '20%', height: window.innerHeight - 30 + 'px' }}
+            >
+              <ul>
+                <Item label={'Person hinzufügen'} />
+                <Item label={'Auftrag hinzufügen'} />
+              </ul>
+            </AbstractBox>
+
+            <AbstractBox
+              background={'light-1'}
+              style={{ width: '80%', height: window.innerHeight - 30 + 'px' }}
+            >
+              <PersonAdder />
+              <OfferAdder />
+            </AbstractBox>
+          </Flex>
         </Grommet>
       </div>
     );
