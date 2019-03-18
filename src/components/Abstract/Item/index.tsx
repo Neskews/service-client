@@ -1,9 +1,10 @@
 import React from 'react';
-import { Text } from 'grommet';
 
 const Item = (props: any) => (
   <>
-    <li {...props}>{props.label}</li>
+    <li {...props} onClick={props.onClick}>
+      {props.label}
+    </li>
   </>
 );
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Grommet } from 'grommet';
 import {
   AbstractBox,
@@ -8,6 +9,7 @@ import {
   OfferAdder,
   Headline
 } from './components';
+import { CHANGE_VIEW } from './api/types';
 
 const theme = {
   global: {
@@ -19,8 +21,15 @@ const theme = {
   }
 };
 
+const views = {
+  addPerson: 'add-person',
+  addOffer: 'add-offer'
+};
+
 class App extends Component {
   render() {
+    const { changeView, view } = this.props;
+
     return (
       <div>
         <Grommet theme={theme}>
@@ -33,8 +42,14 @@ class App extends Component {
               style={{ width: '20%', height: window.innerHeight - 30 + 'px' }}
             >
               <ul>
-                <Item label={'Person hinzufügen'} />
-                <Item label={'Auftrag hinzufügen'} />
+                <Item
+                  onClick={() => changeView(views.addPerson)}
+                  label={'Person hinzufügen'}
+                />
+                <Item
+                  onClick={() => changeView(views.addOffer)}
+                  label={'Auftrag hinzufügen'}
+                />
               </ul>
             </AbstractBox>
 
@@ -42,8 +57,8 @@ class App extends Component {
               background={'light-1'}
               style={{ width: '80%', height: window.innerHeight - 30 + 'px' }}
             >
-              <PersonAdder />
-              <OfferAdder />
+              {view === 'add-person' && <PersonAdder />}
+              {view === 'add-offer' && <OfferAdder />}
             </AbstractBox>
           </Flex>
         </Grommet>
@@ -52,4 +67,19 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = ({ view }) => ({
+  view
+});
+
+const mapDispatchToProps = dispatch => ({
+  changeView: view =>
+    dispatch({
+      type: CHANGE_VIEW,
+      payload: view
+    })
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
