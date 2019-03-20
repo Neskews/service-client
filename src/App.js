@@ -7,7 +7,6 @@ import {
   Typography,
   Toolbar,
   IconButton,
-  withStyles,
   Divider
 } from '@material-ui/core';
 import { Menu, People, Add, Remove } from '@material-ui/icons';
@@ -24,19 +23,6 @@ const views = {
   addPerson: 'add-person',
   listPeople: 'list-people',
   addOffer: 'add-offer'
-};
-
-const styles = {
-  root: {
-    flexGrow: 1
-  },
-  grow: {
-    flexGrow: 1
-  },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20
-  }
 };
 
 class App extends Component {

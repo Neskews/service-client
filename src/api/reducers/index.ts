@@ -18,7 +18,7 @@ const initState: IState = {
   people: [],
   isLoading: false,
   error: undefined,
-  view: '',
+  view: 'list-people',
   indicateSuccessfullyAddedPerson: false,
   indicateSuccessfullyRemovedPerson: false
 };

@@ -1,8 +1,9 @@
 export interface IPerson {
   name: string;
+  id?: number;
 }
 
-export type TViews = '' | 'add-offer' | 'add-person';
+export type TViews = '' | 'add-offer' | 'add-person' | 'list-people';
 
 export interface IState {
   people: IPerson[];
