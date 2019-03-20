@@ -4,9 +4,15 @@ export interface IPersonAdderProps {
   save: (person: IPerson) => void;
   change: (event: React.FormEvent<HTMLInputElement>) => void;
   isLoading: boolean;
-  indicateSuccessfullyAddedPerson: boolean;
+  indicateAddedPerson: boolean;
+  success?: string;
+  error?: string;
 }
 
 export interface IPersonState {
-  name: string;
+  first_name: string;
+  last_name: string;
+  [x: string]: string;
 }
+
+export type TPersonField = 'first_name' | 'last_name';

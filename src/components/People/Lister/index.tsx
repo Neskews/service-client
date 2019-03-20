@@ -27,15 +27,16 @@ class index extends Component<IPeopleListerProps> {
 
     return (
       <List>
-        <ListItem>Name</ListItem>
+        <ListItem>Vornahme</ListItem>
         {people &&
           people.length > 0 &&
-          people.map(({ name, id }, idx) => (
+          people.map(({ first_name, last_name, id }, idx) => (
             <ListItem style={styles.listElement}>
               <ListItemIcon>
                 <People />
               </ListItemIcon>
-              <ListItem key={idx}>{name}</ListItem>
+              <ListItem key={idx}>{first_name}</ListItem>
+              <ListItem key={idx}>{last_name}</ListItem>
               <Button onClick={() => remove(id)}>Löschen</Button>
             </ListItem>
           ))}

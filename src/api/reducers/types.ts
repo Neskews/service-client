@@ -1,5 +1,7 @@
 export interface IPerson {
-  name: string;
+  first_name: string;
+  last_name: string;
+  age?: number;
   id?: number;
 }
 
@@ -10,7 +12,8 @@ export interface IState {
   isLoading: boolean;
   view: TViews;
   error?: string;
-  indicateSuccessfullyAddedPerson?: boolean;
+  success?: string;
+  indicateAddedPerson?: boolean;
   indicateSuccessfullyRemovedPerson?: boolean;
 }
 

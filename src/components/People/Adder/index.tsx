@@ -1,46 +1,66 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { TextField, Button, Typography } from '@material-ui/core';
-import { IPersonAdderProps, IPersonState } from './types';
+import { IPersonAdderProps, IPersonState, TPersonField } from './types';
 import { addPerson } from '../../../api/actions/addPerson';
 import { IPerson } from '../../../api/reducers/types';
 
 class index extends Component<IPersonAdderProps, IPersonState> {
   state = {
-    name: ''
+    first_name: '',
+    last_name: ''
   };
 
-  changeName = (event: any) => {
-    const { value } = event.currentTarget;
-
-    this.setState({ name: value });
+  change = (value: string, field: TPersonField) => {
+    this.setState({
+      [field]: value
+    });
   };
 
   render() {
-    const { save, isLoading, indicateSuccessfullyAddedPerson } = this.props;
+    const { save, isLoading, indicateAddedPerson, error, success } = this.props;
     const person = this.state;
 
     return (
       <div>
         <Typography>Person hinzufügen</Typography>
-        <TextField placeholder={'Name'} onChange={this.changeName} />
+        <TextField
+          placeholder={'Vorname'}
+          onChange={event => {
+            const { value } = event.target;
+            if (value) this.change(value, 'first_name');
+          }}
+        />
+        <TextField
+          placeholder={'Nachname'}
+          onChange={event => {
+            const { value } = event.target;
+            if (value) this.change(value, 'last_name');
+          }}
+        />
         <Button onClick={() => save(person)}>
           {isLoading ? 'Loading' : 'Ok'}
         </Button>
-        {indicateSuccessfullyAddedPerson && <div>Das hat funktioniert!</div>}
+        {indicateAddedPerson && (success || error)}
       </div>
     );
   }
 }
 const mapStateToProps = ({
   isLoading,
-  indicateSuccessfullyAddedPerson
+  indicateAddedPerson,
+  success,
+  error
 }: {
   isLoading: boolean;
-  indicateSuccessfullyAddedPerson: boolean;
+  indicateAddedPerson: boolean;
+  success: string;
+  error: string;
 }) => ({
   isLoading,
-  indicateSuccessfullyAddedPerson
+  indicateAddedPerson,
+  error,
+  success
 });
 
 const mapDispatchToProps = () => ({

@@ -5,7 +5,7 @@ import {
   ADD_PERSON,
   ADDED_PERSON_SUCCESSFULLY,
   ADDING_PERSON_FAILED,
-  REMOVE_ADDED_PERSON_SUCCESSFULLY_HINT,
+  REMOVE_ADDED_PERSON_HINT,
   REMOVE_PERSON,
   REMOVED_PERSON_SUCCESSFULLY,
   REMOVING_PERSON_FAILED,
@@ -18,8 +18,9 @@ const initState: IState = {
   people: [],
   isLoading: false,
   error: undefined,
+  success: undefined,
   view: 'list-people',
-  indicateSuccessfullyAddedPerson: false,
+  indicateAddedPerson: false,
   indicateSuccessfullyRemovedPerson: false
 };
 
@@ -47,13 +48,24 @@ export default (state: IState = initState, { type, payload }: IAction) => {
     case ADDED_PERSON_SUCCESSFULLY:
       return {
         ...state,
-        indicateSuccessfullyAddedPerson: true,
-        isLoading: false
+        indicateAddedPerson: true,
+        isLoading: false,
+        success: payload
       };
     case ADDING_PERSON_FAILED:
-      return { ...state, isLoading: false };
-    case REMOVE_ADDED_PERSON_SUCCESSFULLY_HINT:
-      return { ...state, indicateSuccessfullyAddedPerson: false };
+      return {
+        ...state,
+        isLoading: false,
+        indicateAddedPerson: true,
+        error: payload
+      };
+    case REMOVE_ADDED_PERSON_HINT:
+      return {
+        ...state,
+        indicateAddedPerson: false,
+        success: undefined,
+        error: undefined
+      };
     case REMOVE_PERSON:
       return {
         ...state,
