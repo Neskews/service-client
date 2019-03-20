@@ -9,7 +9,7 @@ import { store } from '../../index';
 
 export const getPeople = () => {
   if (typeof fetch === 'function') {
-    const api = `${SERVER_URL}/persons`;
+    const api = `${SERVER_URL}/people`;
     store.dispatch({ type: GET_PEOPLE });
 
     genericFetch<{ title: string; message: string }>(api, 'GET')

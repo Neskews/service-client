@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Headline } from '../../../components';
 import { connect } from 'react-redux';
-import { TextInput, Button } from 'grommet';
+import { TextField, Button, Typography } from '@material-ui/core';
 import { IPersonAdderProps, IPersonState } from './types';
 import { addPerson } from '../../../api/actions/addPerson';
 import { IPerson } from '../../../api/reducers/types';
@@ -11,7 +10,7 @@ class index extends Component<IPersonAdderProps, IPersonState> {
     name: ''
   };
 
-  changeName = (event: React.FormEvent<HTMLInputElement>) => {
+  changeName = (event: any) => {
     const { value } = event.currentTarget;
 
     this.setState({ name: value });
@@ -23,12 +22,11 @@ class index extends Component<IPersonAdderProps, IPersonState> {
 
     return (
       <div>
-        <Headline label="Person hinzufügen" />
-        <TextInput placeholder={'Name'} onChange={this.changeName} />
-        <Button
-          label={isLoading ? 'Loading' : 'Ok'}
-          onClick={() => save(person)}
-        />
+        <Typography>Person hinzufügen</Typography>
+        <TextField placeholder={'Name'} onChange={this.changeName} />
+        <Button onClick={() => save(person)}>
+          {isLoading ? 'Loading' : 'Ok'}
+        </Button>
         {indicateSuccessfullyAddedPerson && <div>Das hat funktioniert!</div>}
       </div>
     );

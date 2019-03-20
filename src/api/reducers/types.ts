@@ -2,7 +2,7 @@ export interface IPerson {
   name: string;
 }
 
-export type TViews = '' | 'add-offer';
+export type TViews = '' | 'add-offer' | 'add-person';
 
 export interface IState {
   people: IPerson[];
@@ -10,9 +10,10 @@ export interface IState {
   view: TViews;
   error?: string;
   indicateSuccessfullyAddedPerson?: boolean;
+  indicateSuccessfullyRemovedPerson?: boolean;
 }
 
 export interface IAction {
   type: string;
-  payload?: TViews;
+  payload?: TViews | IPerson;
 }

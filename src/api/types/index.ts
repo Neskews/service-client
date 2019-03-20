@@ -9,4 +9,11 @@ export const ADDING_PERSON_FAILED: string = 'Adding a person failed';
 export const REMOVE_ADDED_PERSON_SUCCESSFULLY_HINT: string =
   'Remove hint that indicates that a person was added successfully';
 
+export const REMOVE_PERSON: string = 'Remove Person from backend';
+export const REMOVED_PERSON_SUCCESSFULLY: string =
+  'Successfully removed a person';
+export const REMOVING_PERSON_FAILED: string = 'Removing a person failed';
+export const REMOVE_REMOVED_PERSON_SUCCESSFULLY_HINT: string =
+  'Remove hint that indicates that a person was successfully removed';
+
 export const CHANGE_VIEW: string = 'Change the view';

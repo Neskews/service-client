@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { Headline } from '../../../components';
-import { TextInput } from 'grommet';
+import { TextField, Typography } from '@material-ui/core';
 
 class index extends Component {
   render() {
     return (
       <div>
-        <Headline label="Angebot hinzufügen" />
-        <TextInput placeholder={'Name'} />
+        <Typography>Angebot hinzufügen</Typography>
+        <TextField placeholder={'Name'} />
       </div>
     );
   }
