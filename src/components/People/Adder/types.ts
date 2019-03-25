@@ -12,7 +12,8 @@ export interface IPersonAdderProps {
 export interface IPersonState {
   first_name: string;
   last_name: string;
-  [x: string]: string;
+  points: number;
+  [x: string]: string | number;
 }
 
 export type TPersonField = 'first_name' | 'last_name';

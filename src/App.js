@@ -77,7 +77,7 @@ class App extends Component {
             <Divider />
             <Item
               onClick={() => this.changeView(views.addOffer)}
-              label={'Auftrag hinzufügen'}
+              label={'Angebot hinzufügen'}
               icon={<Remove />}
             />
           </List>

@@ -8,7 +8,8 @@ import { IPerson } from '../../../api/reducers/types';
 class index extends Component<IPersonAdderProps, IPersonState> {
   state = {
     first_name: '',
-    last_name: ''
+    last_name: '',
+    points: 0
   };
 
   change = (value: string, field: TPersonField) => {

@@ -6,6 +6,7 @@ import { getPeople } from '../../../api/actions/getPeople';
 import { removePerson } from '../../../api/actions/removePerson';
 import { IPeopleListerProps } from './types';
 import { IPerson } from '../../../api/reducers/types';
+import { increasePersonPoints } from '../../../api/actions/increasePersonPoints';
 
 const styles = {
   listElement: {
@@ -16,41 +17,60 @@ const styles = {
 
 class index extends Component<IPeopleListerProps> {
   componentDidMount() {
-    const { get } = this.props;
+    const { get, error } = this.props;
 
     // if we can get a list of people, do it
     if (typeof get === 'function') get();
   }
 
   render() {
-    const { people, remove } = this.props;
+    const { people, remove, error, increase } = this.props;
 
     return (
-      <List>
-        <ListItem>Vornahme</ListItem>
-        {people &&
-          people.length > 0 &&
-          people.map(({ first_name, last_name, id }, idx) => (
-            <ListItem style={styles.listElement}>
-              <ListItemIcon>
-                <People />
-              </ListItemIcon>
-              <ListItem key={idx}>{first_name}</ListItem>
-              <ListItem key={idx}>{last_name}</ListItem>
-              <Button onClick={() => remove(id)}>Löschen</Button>
-            </ListItem>
-          ))}
-      </List>
+      <div>
+        {error ? (
+          <div>{error}</div>
+        ) : (
+          <List>
+            {people &&
+              people.length > 0 &&
+              people.map(({ first_name, last_name, points, id }, idx) => (
+                <ListItem style={styles.listElement} key={idx}>
+                  <ListItemIcon>
+                    <People />
+                  </ListItemIcon>
+                  <ListItem>{first_name}</ListItem>
+                  <ListItem>{last_name}</ListItem>
+                  <ListItem>{points}</ListItem>
+                  <ListItem>
+                    <Button onClick={() => remove(id)}>Löschen</Button>
+                  </ListItem>
+                  <ListItem>
+                    <Button onClick={() => increase(id)}>Aufwerten</Button>
+                  </ListItem>
+                </ListItem>
+              ))}
+          </List>
+        )}
+      </div>
     );
   }
 }
-const mapStateToProps = ({ people }: { people: IPerson[] }) => ({
-  people
+const mapStateToProps = ({
+  people,
+  error
+}: {
+  people: IPerson[];
+  error: string;
+}) => ({
+  people,
+  error
 });
 
 const mapDispatchToProps = () => ({
   get: () => getPeople(),
-  remove: (id: number | undefined) => removePerson(id)
+  remove: (id: number | undefined) => removePerson(id),
+  increase: (id: number | undefined) => increasePersonPoints(id, 10)
 });
 
 export default connect(

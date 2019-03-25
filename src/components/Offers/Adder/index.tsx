@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { TextField, Typography } from '@material-ui/core';
 
 class index extends Component {
@@ -12,4 +13,11 @@ class index extends Component {
   }
 }
 
-export default index;
+const mapStateToProps = () => {};
+
+const mapDispatchToProps = () => {};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(index);

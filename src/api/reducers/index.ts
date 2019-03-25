@@ -29,6 +29,7 @@ export default (state: IState = initState, { type, payload }: IAction) => {
     case GET_PEOPLE:
       return {
         ...state,
+        error: undefined,
         isLoading: true
       };
     case GET_PEOPLE_FAILED:
@@ -41,16 +42,23 @@ export default (state: IState = initState, { type, payload }: IAction) => {
       return {
         ...state,
         people: payload,
-        isLoading: false
+        isLoading: false,
+        error: undefined
       };
     case ADD_PERSON:
-      return { ...state, isLoading: true };
+      return {
+        ...state,
+        isLoading: true,
+        error: undefined,
+        success: undefined
+      };
     case ADDED_PERSON_SUCCESSFULLY:
       return {
         ...state,
         indicateAddedPerson: true,
         isLoading: false,
-        success: payload
+        success: payload,
+        error: undefined
       };
     case ADDING_PERSON_FAILED:
       return {

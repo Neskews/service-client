@@ -6,6 +6,7 @@ import {
 } from './../types/index';
 import { SERVER_URL } from '../../constants';
 import { store } from '../../index';
+import { GET_PEOPLE_FAILED_MESSAGE } from '../types/error';
 
 export const getPeople = () => {
   if (typeof fetch === 'function') {
@@ -17,7 +18,10 @@ export const getPeople = () => {
         store.dispatch({ type: GET_PEOPLE_SUCCESS, payload: people });
       })
       .catch(error => {
-        store.dispatch({ type: GET_PEOPLE_FAILED, payload: error });
+        store.dispatch({
+          type: GET_PEOPLE_FAILED,
+          payload: GET_PEOPLE_FAILED_MESSAGE
+        });
       });
   }
 };
