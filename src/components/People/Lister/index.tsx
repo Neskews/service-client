@@ -5,7 +5,7 @@ import { People } from '@material-ui/icons';
 import { getPeople } from '../../../api/actions/getPeople';
 import { removePerson } from '../../../api/actions/removePerson';
 import { IPeopleListerProps } from './types';
-import { IPerson } from '../../../api/reducers/types';
+import { IPerson } from '../../../api/reducers/views/types';
 import { increasePersonPoints } from '../../../api/actions/increasePersonPoints';
 
 const styles = {
@@ -17,7 +17,7 @@ const styles = {
 
 class index extends Component<IPeopleListerProps> {
   componentDidMount() {
-    const { get, error } = this.props;
+    const { get } = this.props;
 
     // if we can get a list of people, do it
     if (typeof get === 'function') get();
@@ -35,7 +35,7 @@ class index extends Component<IPeopleListerProps> {
             {people &&
               people.length > 0 &&
               people.map(({ first_name, last_name, points, id }, idx) => (
-                <ListItem style={styles.listElement} key={idx}>
+                <ListItem style={styles.listElement} key={idx}> //
                   <ListItemIcon>
                     <People />
                   </ListItemIcon>

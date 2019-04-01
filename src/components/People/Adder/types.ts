@@ -1,4 +1,4 @@
-import { IPerson } from './../../../api/reducers/types';
+import { IPerson } from '../../../api/reducers/views/types';
 
 export interface IPersonAdderProps {
   save: (person: IPerson) => void;

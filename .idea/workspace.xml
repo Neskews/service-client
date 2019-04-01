@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b25a2042-5789-4c1b-8546-8761eb808d7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/reducers/views/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/reducers/views/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/actions/addPerson.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/actions/addPerson.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/actions/getPeople.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/actions/getPeople.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/actions/removePerson.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/actions/removePerson.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/reducers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/reducers/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/People/Adder/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/People/Adder/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/People/Adder/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/People/Adder/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/People/Lister/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/People/Lister/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/People/Lister/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/People/Lister/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/reducers/people/types.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/types/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="587">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/reducers/views/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/actions/getPeople.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1249">
+              <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/reducers/people/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-982">
+              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#299#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/api/reducers/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/reducers/views/types.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/People/Lister/index.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-395">
+              <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getPeople</find>
+      <find>can we pls</find>
+      <find>PERSON</find>
+      <find>chagen</find>
+      <find>IP</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/api/reducers/types.ts" />
+        <option value="$PROJECT_DIR$/src/api/reducers/people/get.ts" />
+        <option value="$PROJECT_DIR$/src/api/actions/getPeople.ts" />
+        <option value="$PROJECT_DIR$/src/components/People/Lister/index.tsx" />
+        <option value="$PROJECT_DIR$/src/api/reducers/views/types.ts" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/api/reducers/people/types.ts" />
+        <option value="$PROJECT_DIR$/src/api/reducers/people/index.ts" />
+        <option value="$PROJECT_DIR$/src/api/reducers/index.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/service-client.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="180" />
+    <option name="y" value="132" />
+    <option name="width" value="1080" />
+    <option name="height" value="659" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="service-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="people" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="types" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="People" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="People" type="462c0819:PsiDirectoryNode" />
+              <item name="Lister" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/api/reducers/views" />
+      <recent name="$PROJECT_DIR$/src/api/reducers" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b25a2042-5789-4c1b-8546-8761eb808d7f" name="Default Changelist" comment="" />
+      <created>1553879357776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553879357776</updated>
+      <workItem from="1553879359724" duration="1912000" />
+      <workItem from="1554104955456" duration="389000" />
+      <workItem from="1554136532597" duration="4563000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6864000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info id="npm" order="1" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="TypeScript" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32769832" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="uml://JavaScript-modules-diagram//Users/snabbus_1/dev/private/service-client/src/api/reducers/people/get.ts">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/api/reducers/people/get.ts</OriginalElement>
+          <nodes>
+            <node x="-212.0" y="-1.0">$PROJECT_DIR$/src/api/reducers/people/index.ts#ADDED_PERSON_SUCCESSFULLY#25;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#ADDING_PERSON_FAILED#54;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#ADD_PERSON#11;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#GET_PEOPLE#78;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#GET_PEOPLE_FAILED#92;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#GET_PEOPLE_SUCCESS#113;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#REMOVED_PERSON_SUCCESSFULLY#223;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#REMOVE_ADDED_PERSON_HINT#135;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#REMOVE_PERSON#163;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#REMOVE_REMOVED_PERSON_SUCCESSFULLY_HINT#180;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#REMOVING_PERSON_FAILED#254;</node>
+            <node x="-120.0" y="351.0">$PROJECT_DIR$/src/api/types/index.ts#ADDED_PERSON_SUCCESSFULLY#303;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#ADDING_PERSON_FAILED#383;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#ADD_PERSON#242;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#GET_PEOPLE#13;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#GET_PEOPLE_FAILED#162;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#GET_PEOPLE_SUCCESS#75;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVED_PERSON_SUCCESSFULLY#638;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVE_ADDED_PERSON_HINT#453;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVE_PERSON#571;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVE_REMOVED_PERSON_SUCCESSFULLY_HINT#798;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVING_PERSON_FAILED#724;</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/src/api/reducers/people/index.ts#ADDED_PERSON_SUCCESSFULLY#25;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#ADDING_PERSON_FAILED#54;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#ADD_PERSON#11;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#GET_PEOPLE#78;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#GET_PEOPLE_FAILED#92;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#GET_PEOPLE_SUCCESS#113;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#REMOVED_PERSON_SUCCESSFULLY#223;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#REMOVE_ADDED_PERSON_HINT#135;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#REMOVE_PERSON#163;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#REMOVE_REMOVED_PERSON_SUCCESSFULLY_HINT#180;/Users/snabbus_1/dev/private/service-client/src/api/reducers/people/index.ts#REMOVING_PERSON_FAILED#254;" target="$PROJECT_DIR$/src/api/types/index.ts#ADDED_PERSON_SUCCESSFULLY#303;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#ADDING_PERSON_FAILED#383;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#ADD_PERSON#242;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#GET_PEOPLE#13;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#GET_PEOPLE_FAILED#162;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#GET_PEOPLE_SUCCESS#75;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVED_PERSON_SUCCESSFULLY#638;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVE_ADDED_PERSON_HINT#453;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVE_PERSON#571;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVE_REMOVED_PERSON_SUCCESSFULLY_HINT#798;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVING_PERSON_FAILED#724;">
+              <point x="40.125636301521084" y="0.0" />
+              <point x="40.12563630152107" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-90.5" y="198.0" />
+          <SelectedNodes>
+            <node>$PROJECT_DIR$/src/api/types/index.ts#ADDED_PERSON_SUCCESSFULLY#303;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#ADDING_PERSON_FAILED#383;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#ADD_PERSON#242;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#GET_PEOPLE#13;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#GET_PEOPLE_FAILED#162;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#GET_PEOPLE_SUCCESS#75;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVED_PERSON_SUCCESSFULLY#638;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVE_ADDED_PERSON_HINT#453;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVE_PERSON#571;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVE_REMOVED_PERSON_SUCCESSFULLY_HINT#798;/Users/snabbus_1/dev/private/service-client/src/api/types/index.ts#REMOVING_PERSON_FAILED#724;</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/actions/increasePersonPoints.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/reducers/views/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/reducers/views/types.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/actions/getPeople.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1249">
+          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/People/Lister/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-395">
+          <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/types/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/reducers/people/types.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/reducers/people/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-982">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/reducers/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

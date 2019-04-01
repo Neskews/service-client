@@ -7,7 +7,7 @@ import {
 } from './../types/index';
 import { SERVER_URL } from './../../constants';
 import { genericFetch } from './genericFetch';
-import { IPerson } from '../reducers/types';
+import { IPerson } from '../reducers/views/types';
 import { store } from '../..';
 import { getPeople } from './getPeople';
 

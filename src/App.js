@@ -93,14 +93,14 @@ class App extends Component {
 }
 
 const mapStateToProps = ({ view }) => ({
-  view
+  view: view.view,
 });
 
 const mapDispatchToProps = dispatch => ({
   changeView: view =>
     dispatch({
       type: CHANGE_VIEW,
-      payload: view
+      view
     })
 });
 
