@@ -3,12 +3,10 @@ import {
   REMOVED_PERSON_SUCCESSFULLY,
   REMOVING_PERSON_FAILED,
   REMOVE_REMOVED_PERSON_SUCCESSFULLY_HINT,
-  GET_PEOPLE
-} from './../types/index';
-import { SERVER_URL } from './../../constants';
-import { genericFetch } from './genericFetch';
-import { IPerson } from '../reducers/views/types';
-import { store } from '../..';
+} from '../../types';
+import { SERVER_URL } from '../../../constants';
+import { genericFetch } from '../genericFetch';
+import { store } from '../../../index';
 import { getPeople } from './getPeople';
 
 export function removePerson(id: number | undefined) {

@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { ListItem, List, ListItemIcon, Button } from '@material-ui/core';
 import { People } from '@material-ui/icons';
-import { getPeople } from '../../../api/actions/getPeople';
-import { removePerson } from '../../../api/actions/removePerson';
+import { getPeople } from '../../../api/actions/people/getPeople';
+import { removePerson } from '../../../api/actions/people/removePerson';
 import { IPeopleListerProps } from './types';
 import { IPerson } from '../../../api/reducers/views/types';
-import { increasePersonPoints } from '../../../api/actions/increasePersonPoints';
+import { increasePersonPoints } from '../../../api/actions/people/increasePersonPoints';
 
 const styles = {
   listElement: {
@@ -35,7 +35,7 @@ class index extends Component<IPeopleListerProps> {
             {people &&
               people.length > 0 &&
               people.map(({ first_name, last_name, points, id }, idx) => (
-                <ListItem style={styles.listElement} key={idx}> //
+                <ListItem style={styles.listElement} key={idx}>
                   <ListItemIcon>
                     <People />
                   </ListItemIcon>
@@ -60,17 +60,19 @@ const mapStateToProps = ({
   people,
   error
 }: {
-  people: IPerson[];
+  people: {
+    people: IPerson[]
+  };
   error: string;
 }) => ({
-  people,
+  people: people.people,
   error
 });
 
 const mapDispatchToProps = () => ({
   get: () => getPeople(),
-  remove: (id: number | undefined) => removePerson(id),
-  increase: (id: number | undefined) => increasePersonPoints(id, 10)
+  remove: (id?: number) => removePerson(id),
+  increase: (id?: number) => increasePersonPoints(id, 10)
 });
 
 export default connect(

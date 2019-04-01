@@ -28,4 +28,8 @@ export const INCREASED_PERSON_POINTS_SUCCESSFULLY: string =
 export const FAILED_INCREASING_PERSON_POINTS: string =
   'Failed increasing the points for a person';
 
+export const GET_BADGES: string = 'Request a list of badges';
+export const GOT_BADGES_SUCCESSFULLY: string = 'Successfully requested a list of badges';
+export const GETTING_BADGES_FAILED: string = 'Requesting a list of badges failed';
+
 export const CHANGE_VIEW: string = 'Change the view';

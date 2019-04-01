@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { TextField, Button, Typography } from '@material-ui/core';
 import { IPersonAdderProps, IPersonState, TPersonField } from './types';
-import { addPerson } from '../../../api/actions/addPerson';
+import { addPerson } from '../../../api/actions/people/addPerson';
 import { IPerson } from '../../../api/reducers/views/types';
 
 class index extends Component<IPersonAdderProps, IPersonState> {

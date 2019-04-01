@@ -15,14 +15,16 @@ import {
   Content,
   PersonAdder,
   PeopleLister,
-  OfferAdder
+  OfferAdder,
+  BadgesLister
 } from './components';
 import { CHANGE_VIEW } from './api/types';
 
 const views = {
   addPerson: 'add-person',
   listPeople: 'list-people',
-  addOffer: 'add-offer'
+  addOffer: 'add-offer',
+  listBadges: 'list-badges'
 };
 
 class App extends Component {
@@ -78,7 +80,13 @@ class App extends Component {
             <Item
               onClick={() => this.changeView(views.addOffer)}
               label={'Angebot hinzufügen'}
-              icon={<Remove />}
+              icon={<Add />}
+            />
+            <Divider />
+            <Item
+              onClick={() => this.changeView(views.listBadges)}
+              label={'Badges anzeigen'}
+              icon={<Add />}
             />
           </List>
         </SwipeableDrawer>
@@ -86,6 +94,7 @@ class App extends Component {
           {view === views.addPerson && <PersonAdder />}
           {view === views.listPeople && <PeopleLister />}
           {view === views.addOffer && <OfferAdder />}
+          {view === views.listBadges && <BadgesLister />}
         </Content>
       </Typography>
     );
@@ -99,7 +108,7 @@ const mapStateToProps = ({ view }) => ({
 const mapDispatchToProps = dispatch => ({
   changeView: view =>
     dispatch({
-      type: CHANGE_VIEW,
+      type: CHANGE_VIEW,//
       view
     })
 });

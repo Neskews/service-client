@@ -5,8 +5,8 @@ import {
 import {IViewReducer} from './types';
 import people from '../people';
 
-const initState: IViewReducer= {
-  view: 'list-people'
+const initState: IViewReducer = {
+  view: 'list-badges'
 };
 
 const view = (state: IViewReducer = initState, { type, payload }: any) => {
@@ -14,7 +14,7 @@ const view = (state: IViewReducer = initState, { type, payload }: any) => {
     case CHANGE_VIEW:
       return {
         ...state,
-        payload
+        view: payload
       };
     default:
       return state;

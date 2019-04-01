@@ -1,13 +1,13 @@
 import { getPeople } from './getPeople';
-import { GET_PEOPLE } from './../types/index';
-import { genericFetch } from './genericFetch';
-import { SERVER_URL } from '../../constants';
+import { GET_PEOPLE } from '../../types';
+import { genericFetch } from '../genericFetch';
+import { SERVER_URL } from '../../../constants';
 import {
   INCREASE_PERSON_POINTS,
   INCREASED_PERSON_POINTS_SUCCESSFULLY,
   FAILED_INCREASING_PERSON_POINTS
-} from '../types';
-import { store } from '../..';
+} from '../../types';
+import { store } from '../../../index';
 
 export const increasePersonPoints = (id: number | undefined, by: number) => {
   store.dispatch({ type: INCREASE_PERSON_POINTS });
