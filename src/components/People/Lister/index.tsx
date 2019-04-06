@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { ListItem, List, ListItemIcon, Button } from '@material-ui/core';
-import { People } from '@material-ui/icons';
-import { getPeople } from '../../../api/actions/people/getPeople';
-import { removePerson } from '../../../api/actions/people/removePerson';
-import { IPeopleListerProps } from './types';
-import { IPerson } from '../../../api/reducers/views/types';
-import { increasePersonPoints } from '../../../api/actions/people/increasePersonPoints';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { ListItem, List, ListItemIcon, Button } from "@material-ui/core";
+import { People } from "@material-ui/icons";
+import { getPeople } from "../../../api/actions/people/getPeople";
+import { removePerson } from "../../../api/actions/people/removePerson";
+import { IPeopleListerProps } from "./types";
+import { IPerson } from "../../../api/reducers/views/types";
+import { increasePersonPoints } from "../../../api/actions/people/increasePersonPoints";
 
-const styles = {
+const styles: {
+  listElement: React.CSSProperties;
+} = {
   listElement: {
-    display: 'flex',
-    maxWidth: '400px'
+    display: "flex",
+    maxWidth: "400px"
   }
 };
 
@@ -20,7 +22,7 @@ class index extends Component<IPeopleListerProps> {
     const { get } = this.props;
 
     // if we can get a list of people, do it
-    if (typeof get === 'function') get();
+    if (typeof get === "function") get();
   }
 
   render() {
@@ -35,9 +37,9 @@ class index extends Component<IPeopleListerProps> {
             {people &&
               people.length > 0 &&
               people.map(({ first_name, last_name, points, id }, idx) => (
-                <ListItem style={styles.listElement} key={idx}>
+                <div style={styles.listElement} key={idx}>
                   <ListItemIcon>
-                    <People />
+                    <People  />
                   </ListItemIcon>
                   <ListItem>{first_name}</ListItem>
                   <ListItem>{last_name}</ListItem>
@@ -48,7 +50,7 @@ class index extends Component<IPeopleListerProps> {
                   <ListItem>
                     <Button onClick={() => increase(id)}>Aufwerten</Button>
                   </ListItem>
-                </ListItem>
+                </div>
               ))}
           </List>
         )}
@@ -61,7 +63,7 @@ const mapStateToProps = ({
   error
 }: {
   people: {
-    people: IPerson[]
+    people: IPerson[];
   };
   error: string;
 }) => ({

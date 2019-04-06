@@ -7,11 +7,12 @@ export interface IPerson {
   id?: number;
 }
 
-export type TViews = ''
-    | 'add-offer'
-    | 'add-person'
-    | 'list-people'
-    | 'list-badges';
+export type TViews =
+  | ""
+  | "add-offer"
+  | "add-person"
+  | "list-people"
+  | "list-badges";
 
 export interface IViewReducer {
   view: TViews;

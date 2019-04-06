@@ -14,6 +14,13 @@ export interface IBadgesListerDispatchProps extends IBadgesListerProps {
     get: () => any
 }
 
+
+const styles: { list: React.CSSProperties} = {
+    list: {
+        display: 'flex',
+    }
+};
+
 class BadgesLister extends Component<IBadgesListerDispatchProps> {
     componentDidMount(): void {
         const { get } = this.props;
@@ -22,17 +29,26 @@ class BadgesLister extends Component<IBadgesListerDispatchProps> {
     }
 
     render() {
-        console.log(this.props);
         const { badges } = this.props;
 
         return (
             <List>
                 {
-                    badges && badges.map(({ id, score, name }: {id: any, score: any, name: any}) => (
-                        <ListItem key={id}>
+                    badges
+                    && badges.badges.map(
+                        ({
+                             id,
+                             score,
+                             name
+                        }: {
+                            id: any,
+                            score: any,
+                            name: any
+                        }) => (
+                        <div key={id} style={styles.list}>
                             <ListItem>{name}</ListItem>
                             <ListItem>{score}</ListItem>
-                        </ListItem>
+                        </div>
                     ))
                 }
             </List>

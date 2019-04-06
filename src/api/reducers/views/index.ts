@@ -1,15 +1,15 @@
-import { combineReducers } from 'redux';
-import {
-  CHANGE_VIEW
-} from '../../types';
-import {IViewReducer} from './types';
-import people from '../people';
+import { CHANGE_VIEW } from "../../types";
+import { IViewReducer } from "./types";
+import {IReducerPayload} from "../types";
 
 const initState: IViewReducer = {
-  view: 'list-badges'
+  view: "list-badges"
 };
 
-const view = (state: IViewReducer = initState, { type, payload }: any) => {
+export default (
+  state: IViewReducer = initState,
+  { type, payload }: IReducerPayload
+) => {
   switch (type) {
     case CHANGE_VIEW:
       return {
@@ -20,8 +20,3 @@ const view = (state: IViewReducer = initState, { type, payload }: any) => {
       return state;
   }
 };
-
-export default combineReducers({
-  people,
-  view
-})

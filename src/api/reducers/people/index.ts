@@ -10,10 +10,9 @@ import {
   REMOVE_REMOVED_PERSON_SUCCESSFULLY_HINT,
   REMOVED_PERSON_SUCCESSFULLY,
   REMOVING_PERSON_FAILED
-} from '../../types/';
+} from "../../types/";
 import { IPeopleReducerState } from "./types";
 import { IPerson } from "../views/types";
-
 
 const initState: IPeopleReducerState = {
   people: [],
@@ -24,7 +23,10 @@ const initState: IPeopleReducerState = {
   indicateSuccessfullyRemovedPerson: false
 };
 
-export default (state: any = initState, { type, payload }: { type: string, payload: string | boolean | IPerson }) => {
+export default (
+  state: any = initState,
+  { type, payload }: { type: string; payload: string | boolean | IPerson }
+) => {
   switch (type) {
     case GET_PEOPLE:
       return {

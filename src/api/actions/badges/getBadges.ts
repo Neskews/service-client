@@ -10,7 +10,6 @@ import {GETTING_BADGES_FAILED_MESSAGE} from "../../types/error";
 
 
 export const getBadges = () => {
-    console.log('get badges!');
     if (typeof fetch === 'function') {
         const api = `${SERVER_URL}/badges`;
         store.dispatch({ type: GET_BADGES });

@@ -8,6 +8,7 @@
     "@types/react-redux": "^7.0.1",
     "grommet": "^2.5.5",
     "grommet-icons": "^4.2.0",
+    "node-sass": "^4.11.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-redux": "^6.0.1",

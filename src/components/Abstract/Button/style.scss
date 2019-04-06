@@ -1,0 +1,21 @@
+@import '../../palette.scss';
+
+button {
+  animation: .5s forwards appear;
+  border: none;
+  padding: 6px 48px;
+  border-radius: 10px;
+  background-color: $orange0;
+  color: $gray0;
+}
+
+@keyframes appear {
+  from {
+    position: absolute;
+    left: -1000px;
+  }
+  to {
+    position: absolute;
+    left: 24px;
+  }
+}
